@@ -1,3 +1,17 @@
+# Bakka - TikTok Clone
+
+## Introduction
+
+This web app serves to teach myself more about:
+
+- TypeScript
+- React
+- Next.js
+- Sanity
+- Google Auth via OAuth
+
+The name Bakka arises from the word created by Frank Herbert in his Dune novels. Herbert created the word as a reference to the arabic word "bakkah" which means to crowd in a place such as a bazaar. Herbert's version of the word relates to someone tasked with mourning for mankind.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
