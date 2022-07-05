@@ -9,6 +9,7 @@ This web app serves to teach myself more about:
 - Next.js
 - Sanity
 - Google Auth via OAuth
+- Tailwind CSS
 
 The name Bakka arises from the word created by Frank Herbert in his Dune novels. Herbert created the word as a reference to the arabic word "bakkah" which means to crowd in a place such as a bazaar. Herbert's version of the word relates to someone tasked with mourning for mankind.
 
