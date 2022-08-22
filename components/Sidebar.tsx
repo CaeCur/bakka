@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import GoogleLogin from "react-google-login";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
 import { useState } from "react";
@@ -38,28 +37,12 @@ const Sidebar = () => {
               </div>
             </Link>
           </div>
-          {!userProfile && (
+          {/* {!userProfile && (
             <div className="px-2 py-4 hidden lg:block">
               <p className="text-gray-400">Log in to like and comment</p>
-              <div className="pr-4">
-                <GoogleLogin
-                  clientId=""
-                  render={(renderProps) => (
-                    <button
-                      className="cursor-pointer bg-white text-lg text-[#F51997] border-[1px] border-[#F51997] font-semibold px-6 py-3 rounded-md outline-none w-full mt-3 hover:text-white hover:bg-[#F51997]"
-                      onClick={renderProps.onClick}
-                      disabled={renderProps.disabled}
-                    >
-                      Log In
-                    </button>
-                  )}
-                  onSuccess={() => {}}
-                  onFailure={() => {}}
-                  cookiePolicy="single_host_origin"
-                />
-              </div>
+              <div className="pr-4"></div>
             </div>
-          )}
+          )} */}
 
           <Discover />
           <SuggestedAccounts />
