@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import axios from "axios";
+import { BASE_URL } from "../utils";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
 import NoResults from "../components/NoResults";
@@ -7,6 +8,16 @@ import NoResults from "../components/NoResults";
 interface IProps {
   videos: Video[];
 }
+
+export const getServerSideProps = async () => {
+  const { data } = await axios.get(`${BASE_URL}/api/post`);
+
+  return {
+    props: {
+      videos: data,
+    },
+  };
+};
 
 const Home = ({ videos }: IProps) => {
   return (
@@ -18,16 +29,6 @@ const Home = ({ videos }: IProps) => {
       )}
     </div>
   );
-};
-
-export const getServerSideProps = async () => {
-  const { data } = await axios.get(`http://localhost:3000/api/post`);
-
-  return {
-    props: {
-      videos: data,
-    },
-  };
 };
 
 export default Home;
