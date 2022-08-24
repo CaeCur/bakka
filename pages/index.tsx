@@ -1,9 +1,11 @@
-import type { NextPage } from "next";
 import axios from "axios";
 import { BASE_URL } from "../utils";
 import { Video } from "../types";
 import VideoCard from "../components/VideoCard";
 import NoResults from "../components/NoResults";
+
+// icons import
+import { MdOutlineVideocamOff } from "react-icons/md";
 
 interface IProps {
   videos: Video[];
@@ -25,7 +27,7 @@ const Home = ({ videos }: IProps) => {
       {videos.length ? (
         videos.map((video: Video) => <VideoCard key={video._id} post={video} />)
       ) : (
-        <NoResults text={"No Videos"} />
+        <NoResults text="No Videos" icon={<MdOutlineVideocamOff />} />
       )}
     </div>
   );
