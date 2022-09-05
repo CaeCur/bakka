@@ -15,6 +15,10 @@ The name Bakka arises from the word created by Frank Herbert in his Dune novels.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Mock Deployment URL
+
+You can test out the application via this link: https://bakka.vercel.app/
+
 ## Getting Started
 
 First, run the development server:
