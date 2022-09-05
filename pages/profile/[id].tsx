@@ -42,7 +42,7 @@ const Profile = ({ data }: IProps) => {
     } else {
       setVideosList(userLiked);
     }
-  }, [showUserVideos, userLiked]);
+  }, [showUserVideos, userLiked, userVideos]);
 
   return (
     <div className="w-full">
